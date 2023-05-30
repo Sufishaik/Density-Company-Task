@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
+import Task from './Components/Navbar/Task'
+
 // import Content from './Components/ContentPage/Content'
 
 function App() {
   return (
     <div>
-     <Navbar/>
-     {/* <Content/> */}
+  <Task/>
     </div>
   )
 }
