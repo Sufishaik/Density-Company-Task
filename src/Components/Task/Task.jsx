@@ -513,13 +513,7 @@ function Task() {
         </div>
     </div>
 
-    <script id="__NEXT_DATA__" type="application/json">
-           {/* {
-
-               "props"
-               :{"pageProps":{ }},"page":"/","query":{ },"buildId":"-bZmqSVWIDBPaJMt8Tbna","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]  
-            }                                                                  */}
-                                                                            </script>
+    
     <next-route-announcer>
         <p aria-live="assertive" id="__next-route-announcer__" role="alert"
             style={{border: '0px', clip: 'rect(0px, 0px, 0px, 0px)', height: '1px', margin: '-1px', overflow : 'hidden', padding: '0px',position: 'absolute', top: '0px', width: '1px', whiteSpace: 'nowrap', overflowWrap:' normal'}}>
