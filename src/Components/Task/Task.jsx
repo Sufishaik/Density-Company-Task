@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 function Task() {
     useEffect(() => {
         AOS.init();
+        // AOS.refresh();
       }, [])
   return (
     <>
-      <div id="__next">
+      <div id="__next" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
         <nav className="relative bg-white shadow-xl lg:shadow-none">
             <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-12">
                 <div className="flex justify-between h-16 md:h-20 lg:h-24">
@@ -32,7 +34,7 @@ function Task() {
                             className="inline-flex h-fit my-auto mr-2 items-center justify-center p-2 rounded-md text-gray-400 hover:text-[#3a3a3a] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"><span
                                 className="sr-only">Open main menu</span><svg className="block h-6 w-6"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                ariaHidden="true">
+                                aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                     d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg></button></div>
@@ -132,10 +134,10 @@ function Task() {
                     srcSet="https://densityfrontendui.netlify.app/_ipx/w_128,q_75/%2Fimages%2FplayerPink.png?url=%2Fimages%2FplayerPink.png&w=128&q=75"
                     src="/_next/image?url=%2Fimages%2FplayerPink.png&amp;w=256&amp;q=75" />
             </div>
-            <div className="overflow-auto scrollbar-hide mb-36 aos-init" data-aos="fade-up">
+            <div className="overflow-auto scrollbar-hide mb-36 aos-init aos-animate" data-aos="fade-up">
                 <div className="relative -px-32 flex items-center justify-around w-full gap-x-16 py-8">
                     <div className="flex items-center justify-center w-[300px] h-full min-w-[300px] max-w-[300px]"
-                        style={{transform: 'none'}}>
+                        style={{transform:'none'}}>
                         <div className="flex items-center justify-center w-[300px] h-full min-w-[300px] max-w-[300px]">
                             <div className="bg-[#d9f2ff] px-4 py-6 rounded-xl w-full grow h-full">
                                 <h1 className="text-3xl lg:text-4xl font-bold text-start mb-4">😃</h1>
@@ -203,7 +205,7 @@ function Task() {
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-start">Meet the ahead app</h1>
                         </div>
                         <img data-aos="zoom-in" alt="playerPink" loading="lazy" width="128" height="128"
-                            decoding="async" data-nimg="1" className="block my-6 h-36 lg:h-40 w-auto aos-init"
+                            decoding="async" data-nimg="1"  className="block my-6 h-36 lg:h-40 w-auto aos-init"
                             style={{color:'transparent'}}
                             srcSet="https://densityfrontendui.netlify.app/_ipx/w_128,q_75/%2Fimages%2FplayerPink.png?url=%2Fimages%2FplayerPink.png&w=128&q=75"
                             src="/_next/image?url=%2Fimages%2FplayerPink.png&amp;w=256&amp;q=75" />
@@ -241,19 +243,19 @@ function Task() {
                             may be long, but our sessions are quick. We get to the point and tell you what you want to
                             know (and nothing else).</p>
                     </div>
-                    <div data-aos="fade-left" data-aosDelay="300" className="flex flex-col gap-y-2 aos-init">
+                    <div data-aos="fade-left" data-aos-delay="300" className="flex flex-col gap-y-2 aos-init">
                         <h2 className="text-sm md:text-base lg:text-lg font-bold text-start">It's not as easy as 1-2-3.</h2>
                         <p className="text-sm md:text-base lg:text-lg text-[#7c7a88] font-semibold">The journey of change
                             may be long, but our sessions are quick. We get to the point and tell you what you want to
                             know (and nothing else).</p>
                     </div>
-                    <div data-aos="fade-right" data-aosDelay="400" className="flex flex-col gap-y-2 aos-init">
+                    <div data-aos="fade-right" data-aos-delay="400" className="flex flex-col gap-y-2 aos-init">
                         <h2 className="text-sm md:text-base lg:text-lg font-bold text-start">It's not as easy as 1-2-3.</h2>
                         <p className="text-sm md:text-base lg:text-lg text-[#7c7a88] font-semibold">The journey of change
                             may be long, but our sessions are quick. We get to the point and tell you what you want to
                             know (and nothing else).</p>
                     </div>
-                    <div data-aos="fade-left" data-aosDelay="500" className="flex flex-col gap-y-2 aos-init">
+                    <div data-aos="fade-left" data-aos-delay="500" className="flex flex-col gap-y-2 aos-init">
                         <h2 className="text-sm md:text-base lg:text-lg font-bold text-start">It's not as easy as 1-2-3.</h2>
                         <p className="text-sm md:text-base lg:text-lg text-[#7c7a88] font-semibold">The journey of change
                             may be long, but our sessions are quick. We get to the point and tell you what you want to
@@ -267,9 +269,9 @@ function Task() {
                     className="max-w-[260px] text-2xl sm:text-3xl lg:text-4xl font-bold text-start mb-4 lg:mb-0 lg:mr-2 col-span-1 md:col-span-2 lg:col-span-1 aos-init">
                     Be the best you with EQ</h1>
                 <p className="text-sm lg:text-xl text-[#666568] font-semibold py-2 aos-init" data-aos="fade-left"
-                    data-aosDelay="200">Not having your own emotions under control might be holding you back.</p>
+                    data-aos-delay="200">Not having your own emotions under control might be holding you back.</p>
                 <p className="text-sm lg:text-xl text-[#666568] font-semibold py-2 aos-init" data-aos="fade-left"
-                    data-aosDelay="400">Additionally, not understanding those of others stops you from being parent,
+                    data-aos-delay="400">Additionally, not understanding those of others stops you from being parent,
                     friend you can be.</p>
             </div>
             <div className="mx-2 md:mx-6 lg:mx-10 relative bg-[#eef8fe] min-h-[600px] rounded-2xl grid place-content-center aos-init"
@@ -285,7 +287,7 @@ function Task() {
                         <div
                             className="absolute border-l-4 sm:border-l-0 w-2 h-4/6 sm:h-0 sm:rotate-0 sm:w-4/6 left-6 top-[50%] translate-y-[-50%] sm:translate-y-0 sm:top-12 sm:left-[50%] sm:translate-x-[-50%] sm:border-b-4 border-dashed border-[#bbcbcc]">
                         </div>
-                        <div data-aos="fade-left" data-aosDelay="200"
+                        <div data-aos="fade-left" data-aos-delay="200"
                             className="z-10 flex items-center sm:flex-col gap-2 col-span-1 aos-init">
                             <div className="flex items-center justify-center relative shrink-0"><img alt="spinner"
                                     loading="lazy" width="128" height="128" decoding="async" data-nimg="1"
@@ -296,7 +298,7 @@ function Task() {
                             <p data-aos="fade-up" className="text-start sm:text-center text-sm font-semibold aos-init">
                                 Answer questions on your social skills</p>
                         </div>
-                        <div data-aos="fade-left" data-aosDelay="400"
+                        <div data-aos="fade-left" data-aos-delay="400"
                             className="z-10 flex items-center sm:flex-col gap-2 col-span-1 aos-init">
                             <div className="flex items-center justify-center relative shrink-0">
                                 <img alt="spinner" loading="lazy" width="128" height="128" decoding="async"
@@ -308,7 +310,7 @@ function Task() {
                             <p data-aos="fade-right" className="text-start sm:text-center text-sm font-semibold aos-init">
                                 Let others anonymously answer the same questions about you</p>
                         </div>
-                        <div data-aos="fade-left" data-aosDelay="600"
+                        <div data-aos="fade-left" data-aos-delay="600"
                             className="z-10 flex items-center sm:flex-col gap-2 col-span-1 aos-init">
                             <div className="flex items-center justify-center relative shrink-0"><img alt="spinner"
                                     loading="lazy" width="128" height="128" decoding="async" data-nimg="1"
