@@ -1,12 +1,10 @@
 import React from 'react'
-import Task from './Components/Navbar/Task'
-
-// import Content from './Components/ContentPage/Content'
+import Task from './Components/Task/Task'
 
 function App() {
   return (
     <div>
-  <Task/>
+      <Task/>
     </div>
   )
 }
